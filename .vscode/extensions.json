@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "esbenp.prettier-vscode",
+    "flowtype.flow-for-vscode",
+    "EditorConfig.EditorConfig",
+    "dsznajder.es7-react-js-snippets",
+    "aaron-bond.better-comments"
+  ]
+}

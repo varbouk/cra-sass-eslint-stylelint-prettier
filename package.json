@@ -1,27 +1,68 @@
 {
-  "name": "create-react-app",
+  "name": "cra-sass-eslint-stylelint-prettier",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:varbouk/cra-sass-eslint-stylelint-prettier.git"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:scripts": "eslint src/**/*.{js,jsx}",
+    "lint:styles": "stylelint src/**/*.{css,scss}",
+    "lint:prettier": "npx prettier --check src/**/*.{js,jsx,css,scss}",
+    "lint": "npm run -s lint:scripts & npm run -s lint:styles & npm run -s lint:prettier",
+    "fix:scripts": "eslint --fix src/**/*.{js,jsx}",
+    "fix:styles": "stylelint --fix src/**/*.{css,scss}",
+    "fix:prettier": "npx prettier --write src/**/*.{js,jsx,css,scss}",
+    "fix": "npm run -s fix:scripts & npm run -s fix:styles & npm run -s fix:prettier",
+    "flow:start": "npx flow",
+    "flow:stop": "npx flow stop"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/eslint-plugin": "^7.14.5",
+    "@babel/plugin-syntax-flow": "^7.16.0",
+    "@babel/plugin-transform-react-jsx": "^7.16.0",
+    "@babel/preset-flow": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-testing-library": "^5.0.1",
+    "flow-bin": "^0.166.1",
+    "postcss": "^8.4.4",
+    "prettier": "^2.5.0",
+    "stylelint": "^14.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.0.0"
   },
   "browserslist": {
     "production": [

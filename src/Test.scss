@@ -1,0 +1,16 @@
+/**
+ * This file should trigger errors if Stylelint is well-configured
+ */
+
+// This should trigger a Stylelint error (selector-class-pattern)
+.Test {
+  //
+}
+
+$test: 1px;
+// This should trigger a Stylelint error (scss/at-rule-conditional-no-parentheses)
+@if ($test) {
+  .test {
+    //
+  }
+}
