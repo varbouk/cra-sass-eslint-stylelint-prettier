@@ -36,8 +36,6 @@ Uses Git hooks to format and attempt to fix ESLint and Stylelint errors before c
 
 [Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) are configured to run linters against staged git files and don't let 💩 slip into your code base!
 
-asciicast
-
 ### VS Code settings
 
 [Visual Studio Code](https://code.visualstudio.com/) is a code editor redefined and optimized for building and debugging modern web and cloud applications.\
@@ -49,7 +47,7 @@ Make sure you have [Node.js](https://nodejs.org/) >= 14 installed.
 
 ## Additional Scripts
 
-In the project root directory, you can run the default [Create React App scripts](#available-scripts), plus :
+In the project root directory, you can run the default [Create React App scripts](#available-scripts), plus:
 
 ### `yarn lint:scripts`
 
