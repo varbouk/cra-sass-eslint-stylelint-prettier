@@ -6,8 +6,8 @@
     "node": ">=14"
   },
   "repository": {
-      "type": "git",
-      "url": "git@github.com:varbouk/cra-sass-eslint-stylelint-prettier.git"
+    "type": "git",
+    "url": "git@github.com:varbouk/cra-sass-eslint-stylelint-prettier.git"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,6 +24,23 @@
     "fix": "npm run -s fix:scripts & npm run -s fix:styles & npm run -s fix:prettier",
     "flow:start": "npx flow",
     "flow:stop": "npx flow stop"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "**/*.{css,scss}": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -55,6 +72,8 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-testing-library": "^5.0.1",
     "flow-bin": "^0.166.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
     "postcss": "^8.4.4",
     "prettier": "^2.5.0",
     "stylelint": "^14.1.0",

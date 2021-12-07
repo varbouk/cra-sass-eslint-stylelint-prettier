@@ -3,7 +3,8 @@
 Custom template for [Create React App](https://create-react-app.dev/) to scaffold a new web app project.
 
 Ships with recommended style guides for ESLint and Stylelint that allows you to deploy better and more reliable web apps.\
-Adds `lint` and `fix` and `flow` scripts to the default Create React App ones - _see [Additional Scripts](#additional-scripts)_.
+Adds `lint` and `fix` and `flow` scripts to the default Create React App ones - _see [Additional Scripts](#additional-scripts)_.\
+Uses Git hooks to format and attempt to fix ESLint and Stylelint errors before committing to Git.
 
 ## Features
 
@@ -30,6 +31,12 @@ Adds `lint` and `fix` and `flow` scripts to the default Create React App ones - 
 ### Flow - _disabled by default_
 
 [Flow](https://flow.org/) is a static type checker for JavaScript that identifies problems as you code. You must enable it in order to use it - _see [Enable Flow](#enable-flow)_.
+
+### Git hooks
+
+[Husky](https://github.com/typicode/husky) and [Lint-Staged](https://github.com/okonet/lint-staged) are configured to run linters against staged git files and don't let 💩 slip into your code base!
+
+asciicast
 
 ### VS Code settings
 
