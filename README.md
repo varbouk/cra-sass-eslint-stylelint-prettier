@@ -150,6 +150,11 @@ You can enable Flow type configuration for ESLint by uncommenting in the ESLint 
 - the `flowtype` plugin in the `plugins` array,
 - the `flowVersion` property in the `settings.react` object.
 
+To disable the built-in JavaScript validation in VS Code in favor of Flow (ESLint will still be active), edit the `.vscode/settings.json` file and update the properties:
+
+- set `flow.enabled` to `true`,
+- set `javascript.validate.enable` to `false`.
+
 ## Ignoring files
 
 You can add specific ignore rules by editing the following files at the root directory of your project:
@@ -188,6 +193,7 @@ Feel free to delete these files once everything is ok with your linters.
 
 ## Todo's
 
+- Set up [TypeScript](https://www.typescriptlang.org/).
 - Create a "_real_" [cra-template](https://create-react-app.dev/docs/custom-templates/) and publish it to NPM.
 
 ## Author
