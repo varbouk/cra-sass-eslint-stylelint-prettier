@@ -183,6 +183,7 @@ module.exports = {
     'object-shorthand': 'error', // https://eslint.org/docs/rules/object-shorthand
     'prefer-const': 'warn', // https://eslint.org/docs/rules/prefer-const
     'prefer-template': 'warn', // https://eslint.org/docs/rules/prefer-template
+    'prettier/prettier': 'warn', // https://github.com/prettier/eslint-plugin-prettier#installation
     'react/react-in-jsx-scope': 'off', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks - https://fr.reactjs.org/docs/hooks-rules.html#eslint-plugin
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies - https://fr.reactjs.org/docs/hooks-rules.html#eslint-plugin
