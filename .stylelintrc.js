@@ -51,6 +51,11 @@ module.exports = {
     'scss/comment-no-empty': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/comment-no-empty
     'scss/double-slash-comment-empty-line-before': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/double-slash-comment-empty-line-before
     'prettier/prettier': [true, { severity: 'warning' }], // https://github.com/prettier/stylelint-prettier#installation
+    'at-rule-empty-line-before': [
+      // https://stylelint.io/user-guide/rules/list/at-rule-empty-line-before/
+      'always',
+      { except: ['first-nested', 'blockless-after-same-name-blockless'], ignore: ['after-comment'] },
+    ],
     'at-rule-no-unknown': [
       // https://stylelint.io/user-guide/rules/list/at-rule-no-unknown/
       true,
