@@ -46,7 +46,10 @@ module.exports = {
    * @see https://stylelint.io/user-guide/rules/list
    */
   rules: {
+    'alpha-value-notation': 'number', // https://stylelint.io/user-guide/rules/list/alpha-value-notation/
+    'color-function-notation': 'legacy', // https://stylelint.io/user-guide/rules/list/color-function-notation/
     'no-empty-source': null, // https://stylelint.io/user-guide/rules/list/no-empty-source
+    'shorthand-property-no-redundant-values': null, // https://stylelint.io/user-guide/rules/list/shorthand-property-no-redundant-values/
     'string-quotes': 'single', // https://stylelint.io/user-guide/rules/list/string-quotes/
     'scss/comment-no-empty': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/comment-no-empty
     'scss/double-slash-comment-empty-line-before': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/double-slash-comment-empty-line-before
@@ -54,7 +57,11 @@ module.exports = {
     'at-rule-empty-line-before': [
       // https://stylelint.io/user-guide/rules/list/at-rule-empty-line-before/
       'always',
-      { except: ['first-nested', 'blockless-after-same-name-blockless'], ignore: ['after-comment'] },
+      {
+        except: ['first-nested', 'blockless-after-same-name-blockless'],
+        ignore: ['after-comment'],
+        ignoreAtRules: ['else'],
+      },
     ],
     'at-rule-no-unknown': [
       // https://stylelint.io/user-guide/rules/list/at-rule-no-unknown/
