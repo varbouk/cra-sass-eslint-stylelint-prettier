@@ -193,7 +193,6 @@ Feel free to delete these files once everything is ok with your linters.
 
 ## Todo's
 
-- Set up [TypeScript](https://www.typescriptlang.org/).
 - Create a "_real_" [cra-template](https://create-react-app.dev/docs/custom-templates/) and publish it to NPM.
 
 ## Author
@@ -272,3 +271,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

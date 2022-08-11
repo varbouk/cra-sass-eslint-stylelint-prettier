@@ -18,7 +18,7 @@ module.exports = {
     node: true,
     amd: true,
     es6: true,
-    es2020: true,
+    es2021: true,
     // jest: true,
     // 'jest/globals': true,
     jquery: false,
@@ -90,6 +90,32 @@ module.exports = {
          * @see https://babeljs.io/docs/en/babel-preset-flow
          */
         // '@babel/preset-flow',
+
+        /**
+         * @see https://babeljs.io/docs/en/babel-preset-env
+         */
+        [
+          '@babel/preset-env',
+          {
+            /**
+             * @see https://babeljs.io/docs/en/babel-preset-env#usebuiltins
+             */
+            useBuiltIns: 'usage',
+
+            /**
+             * @see https://babeljs.io/docs/en/babel-preset-env#shippedproposals
+             */
+            // shippedProposals: true,
+
+            /**
+             * @see https://babeljs.io/docs/en/babel-preset-env#corejs
+             */
+            corejs: {
+              version: '3.24', // core-js version, should match version in /node_modules/core-js/package.json
+              proposals: true,
+            },
+          },
+        ],
       ],
     },
     requireConfigFile: false,
