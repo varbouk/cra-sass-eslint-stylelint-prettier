@@ -43,7 +43,7 @@ It is free, built on open source and available on your favorite platform - Linux
 
 ## Requirements
 
-Make sure you have [Node.js](https://nodejs.org/) >= 14 installed.
+Make sure you have [Node.js](https://nodejs.org/) 14, 16 or >=18 installed.
 
 ## Additional Scripts
 
@@ -271,4 +271,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
