@@ -4,3 +4,6 @@
 # Build products
 .cache/
 build/
+
+# App files
+src/reportWebVitals.js

@@ -100,9 +100,11 @@ When you use this template ESLint will check your code against various style gui
 - [react-app/jest](https://github.com/jest-community/eslint-plugin-jest) - Optional Jest rules for ESLint - _**disabled by default**_.
 - [plugin:react/recommended](https://github.com/yannickcr/eslint-plugin-react) - Recommended configuration for React.
 - [plugin:react-hooks/recommended](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) - Recommended configuration for React Hooks.
-- [plugin:jsx-a11y/recommended](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) - Accessibility rules for JSX elements.
+- [plugin:promise/recommended](https://github.com/eslint-community/eslint-plugin-promise) - Recommended practices for JavaScript promises.
+- [plugin:jsdoc/recommended](https://github.com/gajus/eslint-plugin-jsdoc) - Recommended practices for JSDoc comments.
 - [plugin:flowtype/recommended](https://github.com/gajus/eslint-plugin-flowtype) - Optional Flow type configuration for ESLint - _**disabled by default**_.
 - [plugin:jest/all](https://github.com/jest-community/eslint-plugin-jest) - Optional recommended configuration and stylistic rules for Jest - _**disabled by default**_.
+- [plugin:jsx-a11y/recommended](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) - Accessibility rules for JSX elements.
 - [plugin:prettier/recommended](https://github.com/prettier/eslint-plugin-prettier) - Runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
 
 By default, it will check any JavaScript files (`{js,jsx}`) in your src folder.
@@ -139,6 +141,7 @@ You can enable Jest rules for ESLint by uncommenting in the ESLint configuration
 - the `jest` and `jest/globals` properties in the `env` object,
 - the `react-app/jest` module in the `extends` array,
 - the `plugin:jest/all` module in the `extends` array,
+- the `jest` plugin in the `plugins` array,
 - the `version` property in the `settings.jest` object.
 
 ### Enable Flow

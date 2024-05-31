@@ -59,6 +59,16 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
 
     /**
+     * @see https://github.com/eslint-community/eslint-plugin-promise
+     */
+    'plugin:promise/recommended',
+
+    /**
+     * @see https://github.com/gajus/eslint-plugin-jsdoc
+     */
+    'plugin:jsdoc/recommended',
+
+    /**
      * @see https://github.com/jest-community/eslint-plugin-jest
      */
     // 'plugin:jest/all',
@@ -147,9 +157,19 @@ module.exports = {
     'react-hooks',
 
     /**
+     * @see https://www.npmjs.com/package/eslint-plugin-promise
+     */
+    'promise',
+
+    /**
+     * @see https://www.npmjs.com/package/eslint-plugin-jsdoc
+     */
+    'jsdoc',
+
+    /**
      * @see https://github.com/jest-community/eslint-plugin-jest
      */
-    'jest',
+    // 'jest',
 
     /**
      * @see https://www.npmjs.com/package/eslint-plugin-flowtype
@@ -203,16 +223,13 @@ module.exports = {
    * @see https://eslint.org/docs/rules/
    */
   rules: {
+    /** ESLint rules */
     'no-confusing-arrow': ['error', { allowParens: true }], // https://eslint.org/docs/rules/no-confusing-arrow
     'no-console': 'off', // https://eslint.org/docs/rules/no-console
     'no-var': 'warn', // https://eslint.org/docs/rules/no-var
     'object-shorthand': 'error', // https://eslint.org/docs/rules/object-shorthand
     'prefer-const': 'warn', // https://eslint.org/docs/rules/prefer-const
     'prefer-template': 'warn', // https://eslint.org/docs/rules/prefer-template
-    'prettier/prettier': 'warn', // https://github.com/prettier/eslint-plugin-prettier#installation
-    'react/react-in-jsx-scope': 'off', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
-    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks - https://fr.reactjs.org/docs/hooks-rules.html#eslint-plugin
-    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies - https://fr.reactjs.org/docs/hooks-rules.html#eslint-plugin
     quotes: ['error', 'single'], // https://eslint.org/docs/rules/quotes
     'comma-dangle': [
       // https://eslint.org/docs/rules/comma-dangle
@@ -225,5 +242,22 @@ module.exports = {
         functions: 'ignore',
       },
     ],
+
+    /** React rules */
+    'react/react-in-jsx-scope': 'off', // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
+
+    /** React hooks rules */
+    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies - https://fr.reactjs.org/docs/hooks-rules.html#eslint-plugin
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks - https://fr.reactjs.org/docs/hooks-rules.html#eslint-plugin
+
+    /** JSX a11y rules */
+    'jsx-a11y/no-autofocus': 'off', // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/30deacbf240f8cea7b88a977a72ed54b499c134e/docs/rules/no-autofocus.md
+
+    /** Promise rules */
+
+    /** JSDoc rules */
+
+    /** Prettier rules */
+    'prettier/prettier': 'warn', // https://github.com/prettier/eslint-plugin-prettier#installation
   },
 };

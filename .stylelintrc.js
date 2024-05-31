@@ -46,14 +46,13 @@ module.exports = {
    * @see https://stylelint.io/user-guide/rules/list
    */
   rules: {
+    /** Stylelint rules */
     'alpha-value-notation': 'number', // https://stylelint.io/user-guide/rules/list/alpha-value-notation/
     'color-function-notation': 'legacy', // https://stylelint.io/user-guide/rules/list/color-function-notation/
+    'declaration-no-important': [true, { severity: 'warning' }], // https://stylelint.io/user-guide/rules/list/declaration-no-important
     'no-empty-source': null, // https://stylelint.io/user-guide/rules/list/no-empty-source
     'shorthand-property-no-redundant-values': null, // https://stylelint.io/user-guide/rules/list/shorthand-property-no-redundant-values/
     'string-quotes': 'single', // https://stylelint.io/user-guide/rules/list/string-quotes/
-    'scss/comment-no-empty': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/comment-no-empty
-    'scss/double-slash-comment-empty-line-before': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/double-slash-comment-empty-line-before
-    'prettier/prettier': [true, { severity: 'warning' }], // https://github.com/prettier/stylelint-prettier#installation
     'at-rule-empty-line-before': [
       // https://stylelint.io/user-guide/rules/list/at-rule-empty-line-before/
       'always',
@@ -91,5 +90,13 @@ module.exports = {
         ],
       },
     ],
+
+    /** Stylelint scss rules */
+    'scss/comment-no-empty': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/comment-no-empty
+    'scss/double-slash-comment-empty-line-before': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/double-slash-comment-empty-line-before
+    'scss/no-global-function-names': null, // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/no-global-function-names
+
+    /** Prettier rules */
+    'prettier/prettier': [true, { severity: 'warning' }], // https://github.com/prettier/stylelint-prettier#installation
   },
 };

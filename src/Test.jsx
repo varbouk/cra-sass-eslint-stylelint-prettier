@@ -1,3 +1,5 @@
+/* eslint-disable jsdoc/require-jsdoc */
+
 // @flow
 /**
  * This file should trigger warnings and errors if ESLint is well-configured
@@ -57,10 +59,26 @@ function Test(props) {
   }
 
   /**
+   * JSDoc
+   */
+
+  /**
+   * This should trigger an ESLint warning (jsdoc/require-returns)
+   */
+  const p = () => new Promise(() => {});
+
+  /**
+   * Promise
+   */
+
+  // This should trigger an ESLint error (promise/catch-or-return)
+  p().then(true);
+
+  /**
    * Prettier
    */
 
-  // This should trigger an ESLint error (prettier/prettier)
+  // This should trigger an ESLint warning (prettier/prettier)
   const c = a => a ? 2 : 3; // eslint-disable-line no-confusing-arrow
 
   /**
